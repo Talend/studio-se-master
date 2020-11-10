@@ -34,7 +34,12 @@
         </repository>
     </repositories>
 
-	<dependencies>
+		<dependencies>
+			<dependency>
+			<groupId>biz.aQute.bnd</groupId>
+			<artifactId>biz.aQute.bndlib</artifactId>
+			<version>5.2.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.ops4j.pax.url</groupId>
 			<artifactId>pax-url-aether</artifactId>
