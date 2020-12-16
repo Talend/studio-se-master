@@ -10,11 +10,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <components.version>0.29.0-SNAPSHOT</components.version>
         <daikon.version>0.31.11</daikon.version>
-        <daikon-ee.format.verison>1.5.0</daikon-ee.format.verison>
+        <daikon-ee.format.verison>3.2.0</daikon-ee.format.verison>
         <daikon.audit.version>1.16.1</daikon.audit.version>
         <org.talend.daikon.crypto-utils.version>0.31.11</org.talend.daikon.crypto-utils.version>
         <studio-utils.version>1.0.0-SNAPSHOT</studio-utils.version>
-        <tycho.version>0.22.0</tycho.version>
+        <tycho.version>1.7.0</tycho.version>
         <tycho-extras.version>${tycho.version}</tycho-extras.version>
         <base.version>7.4.1</base.version>
         <!-- osgi.compatible.version is either ${base.version}-SNAPSHOT (snapshots), ${base.version}.<suffix> (milestones), or ${base.version} (GA)-->
@@ -243,7 +243,10 @@
                 <artifactId>tycho-compiler-plugin</artifactId>
                 <version>${tycho.version}</version>
                 <configuration>
-                    <compilerArgument>-warn:+discouraged,forbidden</compilerArgument>
+	            <compilerArgs>
+			<arg>-err:+discouraged,forbidden</arg>
+			<arg>-warn:+discouraged,forbidden</arg>
+		    </compilerArgs>
                     <compilerVersion>1.8</compilerVersion>
                     <source>1.8</source>
                     <target>1.8</target>

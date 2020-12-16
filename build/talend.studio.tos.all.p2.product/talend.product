@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Talend Open Studio" uid="org.talend.studio.tos.all.p2.product" id="org.talend.rcp.branding.tos.all.p2.product" application="org.talend.rcp.branding.tos.application" useFeatures="true" includeLaunchers="false">
+<product name="Talend Open Studio" uid="org.talend.studio.tos.all.p2.product" id="org.talend.rcp.branding.tos.all.p2.product" application="org.talend.rcp.branding.tos.application" useFeatures="true" includeLaunchers="false" version="7.4.1.qualifier">
 
    <configIni use="default">
       <linux>config.ini</linux>

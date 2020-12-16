@@ -463,7 +463,7 @@
                         <version>${tycho.version}</version>
                         <configuration>
                             <strictBinIncludes>false</strictBinIncludes>
-                            <format>yyyyMMdd'_'HHmm'${release.suffix}'</format>
+                            <format>yyyyMMdd'_'HHmm</format>
                             <archive>
                                 <addMavenDescriptor>false</addMavenDescriptor>
                                 <!-- By default, name of the current user is inserted into generated MANIFEST.MF files -->
@@ -539,7 +539,7 @@
                                         <mkdir dir="${product.dir}" />
                                         <echo>Moving product ZIP ${project.build.directory}/products/${product.final.name}.zip to ${product.dir}</echo>
                                         <move todir="${product.dir}" file="${project.build.directory}/products/${product.final.name}.zip" />
-                                        
+
                                         <!-- Copy bom -->
                                         <property name="bom.build.path" value="${product.build.id}/BOMS" />
                                         <property name="bom.dir" value="${storage}/${bom.build.path}" />
@@ -554,7 +554,7 @@
                                         <copy tofile="${bom.dir}/${bom.final.name.prefix}-report.txt" file="${bom.out.dir}/report.txt" />
                                         <if>
                                             <and>
-                                                <equals arg1="${env.HUDSON_URL}" arg2="http://newbuild.talend.com:8180/" />
+                                                <equals arg1="${env.HUDSON_URL}" arg2="https://ci-newbuild.talend.com/" />
                                                 <equals arg1="${automaticnb}" arg2="1" />
                                             </and>
                                             <then>
