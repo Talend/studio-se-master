@@ -487,7 +487,7 @@
                         <version>${tycho.version}</version>
                         <configuration>
                             <strictBinIncludes>false</strictBinIncludes>
-                            <format>'${product.timestamp}${release.suffix}'</format>
+                            <format>yyyyMMdd'_'HHmm</format>
                             <archive>
                                 <addMavenDescriptor>false</addMavenDescriptor>
                                 <!-- By default, name of the current user is inserted into generated MANIFEST.MF files -->
