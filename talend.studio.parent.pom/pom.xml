@@ -28,8 +28,7 @@
         <talend.nexus.p2unzip.url>${talend.nexus.host}/nexus/content/unzip</talend.nexus.p2unzip.url>
         <opensourcesnapshot-unziprepo.url>${talend.nexus.p2unzip.url}/TalendP2UnzipOpenSourceSnapshot/org/talend/repo</opensourcesnapshot-unziprepo.url>
         <opensourcerelease-unziprepo.url>${talend.nexus.p2unzip.url}/TalendP2UnzipOpenSourceRelease/org/talend/repo</opensourcerelease-unziprepo.url>
-        <eclipse-repo.url>http://download.eclipse.org/eclipse/updates/4.17</eclipse-repo.url>
-        <eclipse-emf-repo.url>https://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/R202005260905/</eclipse-emf-repo.url>
+        <eclipse-repo.url>file:///Users/nrousseau/Downloads/newTarget741/ANY</eclipse-repo.url>
         <babel-repo.url>https://download.eclipse.org/technology/babel/update-site/R0.18.1/2020-09/</babel-repo.url>
         <doc-repo.url>${opensourcesnapshot-unziprepo.url}/talend-doc-p2-repo/${doc.version}/talend-doc-p2-repo-${doc.version}.zip-unzip/</doc-repo.url>
         <bonita-open-repo.url>${opensourcerelease-unziprepo.url}/bonita-community-p2-repo/7.9.0/bonita-community-p2-repo-7.9.0.zip-unzip/</bonita-open-repo.url>
@@ -38,7 +37,6 @@
         <opensourcerelease-repo.url>${talend.nexus.url}/TalendOpenSourceRelease</opensourcerelease-repo.url>
         <tos-p2-repo.url>${talend.nexus.p2unzip.url}/TalendP2UnzipOpenSource${repo.type}/org/talend/studio/talend-tos-p2-repo/${osgi.compatible.version}/talend-tos-p2-repo-${osgi.compatible.version}.zip-unzip/</tos-p2-repo.url>
         <tos-deps-p2-repo.url>${talend.nexus.p2unzip.url}/TalendP2UnzipOpenSource${repo.type}/org/talend/repo/dependencies.p2.tos/${maven.compatible.version}/dependencies.p2.tos-${maven.compatible.version}.zip-unzip/</tos-deps-p2-repo.url>
-        <eclipse-orbit-p2-repo.url>${opensourcerelease-unziprepo.url}/orbit/7.4.1/orbit-7.4.1.zip-unzip</eclipse-orbit-p2-repo.url>
         <jgit.dirtyWorkingTree.official>error</jgit.dirtyWorkingTree.official>
         <osgi.ws>win32</osgi.ws>
         <osgi.os>win32</osgi.os>
@@ -63,14 +61,9 @@
 
     <repositories>
         <repository>
-            <id>eclipse_orbit</id>
-            <url>${eclipse-orbit-p2-repo.url}</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
             <id>tos-deps</id>
             <!-- setup normally with ${tos-deps-p2-repo.url}, changed for local testing only -->
-            <url>file:///Users/nrousseau/Downloads/test/p2tos</url>
+            <url>file:///Users/nrousseau/Documents/p2-tos</url>
             <layout>p2</layout>
         </repository>
         <repository>
@@ -79,33 +72,8 @@
             <layout>p2</layout>
         </repository>
         <repository>
-            <id>m2e_repo</id>
-            <url>https://download.eclipse.org/technology/m2e/releases/1.16.2/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
             <id>atl_repo</id>
-            <url>http://download.eclipse.org/mmt/atl/updates/releases/4.2.1</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>jeeeyul_repo</id>
-            <url>http://eclipse.jeeeyul.net/update/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>emfcompare_repo</id>
-            <url>${eclipse-emf-repo.url}</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>emf_repo</id>
-            <url>https://download.eclipse.org/modeling/emf/emf/builds/release/2.23</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>webtools</id>
-            <url>https://download.eclipse.org/webtools/downloads/drops/R3.19.0/R-3.19.0-20200828030223/repository/</url>
+            <url>https://download.eclipse.org/mmt/atl/updates/releases/4.2.1</url>
             <layout>p2</layout>
         </repository>
         <repository>
@@ -125,12 +93,7 @@
         </repository>
         <repository>
             <id>swtbot</id>
-            <url>http://download.eclipse.org/technology/swtbot/releases/3.0.0/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>nattable</id>
-            <url>http://download.eclipse.org/nattable/releases/1.6.0/repository/</url>
+            <url>https://download.eclipse.org/technology/swtbot/releases/3.0.0/</url>
             <layout>p2</layout>
         </repository>
         <repository>
@@ -214,7 +177,7 @@
                             <type>eclipse-plugin</type>
                             <id>org.eclipse.jdt.core</id>
                             <restrictTo>
-                                <version>3.23.0.v20200828-0941</version>
+                                <version>3.24.0.v20201123-0742</version>
                             </restrictTo>
                         </filter>
 
