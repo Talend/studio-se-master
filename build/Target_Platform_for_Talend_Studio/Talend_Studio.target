@@ -33,6 +33,8 @@
   			<unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.3.200.v202011230238"/>
   			<unit id="org.eclipse.wst.json_ui.feature.feature.group" version="1.1.8.v202004230532"/>
   			<unit id="org.eclipse.gef" version="3.11.0.201606061308"/>
+  			<unit id="org.eclipse.gmf.runtime.diagram.ui.printing" version="1.7.0.202004160913"/>
+  			<unit id="org.eclipse.gmf.runtime.diagram.ui.printing.render" version="1.8.0.202004160913"/>
         </location>
 	    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		    <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20201130205003/repository/"/>
@@ -408,8 +410,8 @@
 	    </location>
     </locations>
 	<environment>
-		<os>linux</os>
-		<ws>gtk</ws>
+		<os>win32</os>
+		<ws>win32</ws>
 		<arch>x86_64</arch>
 	</environment>
 </target>

@@ -28,7 +28,7 @@
         <talend.nexus.p2unzip.url>${talend.nexus.host}/nexus/content/unzip</talend.nexus.p2unzip.url>
         <opensourcesnapshot-unziprepo.url>${talend.nexus.p2unzip.url}/TalendP2UnzipOpenSourceSnapshot/org/talend/repo</opensourcesnapshot-unziprepo.url>
         <opensourcerelease-unziprepo.url>${talend.nexus.p2unzip.url}/TalendP2UnzipOpenSourceRelease/org/talend/repo</opensourcerelease-unziprepo.url>
-        <eclipse-repo.url>file:///Users/nrousseau/Downloads/newTarget741/ANY</eclipse-repo.url>
+        <eclipse-repo.url>file:///D:/Work/eclipse_upgrade/target_platform/target741/eclipse</eclipse-repo.url>
         <babel-repo.url>https://download.eclipse.org/technology/babel/update-site/R0.18.1/2020-09/</babel-repo.url>
         <doc-repo.url>${opensourcesnapshot-unziprepo.url}/talend-doc-p2-repo/${doc.version}/talend-doc-p2-repo-${doc.version}.zip-unzip/</doc-repo.url>
         <bonita-open-repo.url>${opensourcerelease-unziprepo.url}/bonita-community-p2-repo/7.9.0/bonita-community-p2-repo-7.9.0.zip-unzip/</bonita-open-repo.url>
@@ -63,7 +63,7 @@
         <repository>
             <id>tos-deps</id>
             <!-- setup normally with ${tos-deps-p2-repo.url}, changed for local testing only -->
-            <url>file:///Users/nrousseau/Documents/p2-tos</url>
+            <url>file:///D:/Work/eclipse_upgrade/target_platform/target741/p2-tos</url>
             <layout>p2</layout>
         </repository>
         <repository>
