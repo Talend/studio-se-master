@@ -13,7 +13,7 @@
         <daikon-ee.format.verison>3.2.0</daikon-ee.format.verison>
         <daikon.audit.version>1.16.1</daikon.audit.version>
         <org.talend.daikon.crypto-utils.version>0.31.11</org.talend.daikon.crypto-utils.version>
-        <studio-utils.version>1.0.0-SNAPSHOT</studio-utils.version>
+        <studio-utils.version>1.1.0-SNAPSHOT</studio-utils.version>
         <tycho.version>1.7.0</tycho.version>
         <tycho-extras.version>${tycho.version}</tycho-extras.version>
         <base.version>7.4.1</base.version>
