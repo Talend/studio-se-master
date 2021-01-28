@@ -8,7 +8,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <components.version>0.29.0-SNAPSHOT</components.version>
+        <components.version>0.30.0-SNAPSHOT</components.version>
         <daikon.version>0.31.11</daikon.version>
         <daikon-ee.format.verison>3.2.0</daikon-ee.format.verison>
         <daikon.audit.version>1.16.1</daikon.audit.version>
