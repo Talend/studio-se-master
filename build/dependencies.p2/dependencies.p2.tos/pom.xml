@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>org.ops4j.pax.url</groupId>
 			<artifactId>pax-url-aether</artifactId>
-			<version>2.6.1-Talend</version>
+			<version>2.6.2-Talend</version>
 		</dependency>
 		<dependency>
 			<groupId>org.talend.dataquality</groupId>
